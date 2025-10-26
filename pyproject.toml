@@ -1,0 +1,20 @@
+[project]
+name = "rag-app"
+version = "0.1.0"
+description = "PDF RAG pipeline with FAISS + SQLite + Pydantic + Gemini 2.5 Flash"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+
+dependencies = [
+    "torch",
+    "sentence-transformers",
+    "faiss-cpu",
+    "pydantic>=2.0.0",
+    "rich",
+    "PyPDF2",
+    "numpy",
+    "google-genai",  # Gemini 2.5 Flash client
+]
+
+[tool.uv]
+python = "3.11"
