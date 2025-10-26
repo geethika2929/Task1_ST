@@ -1,20 +1,32 @@
-from pydantic import BaseModel
-from pathlib import Path
+from pydantic import BaseModel, ConfigDict
 
 class Settings(BaseModel):
-    data_dir: Path = Path("data")
+    model_config = ConfigDict(extra="ignore")
 
-    sqlite_path: Path = Path("storage/chunks.db")
-    faiss_index_path: Path = Path("storage/index.faiss")
-    id_map_path: Path = Path("storage/chunk_ids.npy")
+    # storage
+    data_dir: str = "data"
+    sqlite_path: str = "store/chunks.sqlite3"
+    faiss_index_path: str = "store/index.faiss"
+    id_map_path: str = "store/chunk_ids.npy"
 
+    # retrieval / chunking
     embedding_model_name: str = "sentence-transformers/all-MiniLM-L6-v2"
-
     chunk_size: int = 800
-    chunk_overlap: int = 200
+    chunk_overlap: int = 300
 
-    # bumped from 4 -> 12 to widen cosine similarity search results
-    default_top_k: int = 12
+    # retrieval fan-out and display limits
+    default_top_k: int = 12          # how many chunks we actually pass to answer + show in UI
+    reranker_candidates: int = 50    # how many we pull from FAISS per query before fusion/rerank
+
+    # reranking config
+    reranker_type: str = "mmr"       # one of: "rrf", "mmr", "cross_encoder", "gemini", "none"
+    mmr_lambda: float = 0.6          # used only if reranker_type == "mmr"
+
+    cross_encoder_model: str = "cross-encoder/ms-marco-MiniLM-L-6-v2"  # optional
+    gemini_reranker_model: str = "gemini-2.5-flash"                    # optional (GOOGLE_API_KEY required)
+
+    # RRF config
+    rrf_k_base: int = 60             # standard RRF constant (controls how fast scores decay)
 
 def get_settings() -> Settings:
     return Settings()

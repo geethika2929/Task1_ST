@@ -1,0 +1,863 @@
+2025-10-26 14:19:32,515 | DEBUG | rag_app | Logger initialized. APP_LOG_PATH=logs/app.log ERR_LOG_PATH=logs/error.log
+2025-10-26 14:19:32,515 | INFO | rag_app | Starting RAG app. rebuild=False llm=True
+2025-10-26 14:19:32,517 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:19:32,517 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:19:32,518 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:19:32,518 | INFO | rag_app | build_index called with rebuild=False (reusing existing index).
+2025-10-26 14:19:46,168 | INFO | rag_app | User question: 'who is geethika and what is rleg' (use_llm=True)
+2025-10-26 14:19:46,171 | INFO | rag_app | ask() called. question='who is geethika and what is rleg' top_k=12 use_llm=True
+2025-10-26 14:19:46,171 | DEBUG | rag_app | Topic flags: want_rleg=True want_dino=False
+2025-10-26 14:19:52,486 | DEBUG | rag_app | generic retrieval returned 12 hits
+2025-10-26 14:19:52,550 | DEBUG | rag_app | RLEG retrieval returned 12 hits
+2025-10-26 14:19:52,550 | DEBUG | rag_app | Deduped hits: 24 -> 19
+2025-10-26 14:19:58,404 | INFO | rag_app | Generated answer length=228 chars
+2025-10-26 14:19:58,433 | INFO | rag_app | Answer preview: '- Geethika is a contact person with a phone number for Aeon at Mahindra University, also described as a "very good girl."\n- RLEG is a vision-language representation learning method that uses diffusion'
+2025-10-26 14:19:58,434 | DEBUG | rag_app | Returned 19 context chunks
+2025-10-26 14:24:20,854 | INFO | rag_app | Session ended by user.
+2025-10-26 14:24:20,863 | DEBUG | rag_app | Closing RAGPipeline and VectorStore.
+2025-10-26 14:24:20,869 | INFO | rag_app | RAG app shutdown complete.
+2025-10-26 14:25:07,668 | DEBUG | rag_app | Logger initialized. APP_LOG_PATH=logs/app.log ERR_LOG_PATH=logs/error.log
+2025-10-26 14:25:07,670 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:25:07,670 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:25:07,670 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:26:34,225 | DEBUG | rag_app | Logger initialized. APP_LOG_PATH=logs/app.log ERR_LOG_PATH=logs/error.log
+2025-10-26 14:26:34,226 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:26:34,226 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:26:34,226 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:26:54,516 | DEBUG | rag_app | Logger initialized. APP_LOG_PATH=logs/app.log ERR_LOG_PATH=logs/error.log
+2025-10-26 14:26:54,518 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:26:54,518 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:26:54,518 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:27:07,270 | INFO | rag_app | Uploaded 1 new files: ['2508.10104v1.pdf']
+2025-10-26 14:27:07,294 | INFO | rag_app | Rebuilding index from data/: data
+2025-10-26 14:27:10,668 | INFO | rag_app | Loaded 8 documents from data
+2025-10-26 14:27:10,670 | INFO | rag_app | Chunked into 873 chunks (size=800 overlap=200)
+2025-10-26 14:27:11,531 | INFO | rag_app | Uploaded 2 new files: ['2508.10104v1.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 14:27:11,533 | INFO | rag_app | Rebuilding index from data/: data
+2025-10-26 14:27:14,917 | INFO | rag_app | Loaded 8 documents from data
+2025-10-26 14:27:14,919 | INFO | rag_app | Chunked into 873 chunks (size=800 overlap=200)
+2025-10-26 14:27:25,498 | INFO | rag_app | Uploaded 3 new files: ['2508.10104v1.pdf', '2503.19108v1 (1).pdf', 'Job description - 6 months internship (technology Hiring) (2).docx']
+2025-10-26 14:27:25,522 | INFO | rag_app | Rebuilding index from data/: data
+2025-10-26 14:27:29,538 | INFO | rag_app | Loaded 9 documents from data
+2025-10-26 14:27:29,542 | INFO | rag_app | Chunked into 873 chunks (size=800 overlap=200)
+2025-10-26 14:27:30,629 | INFO | rag_app | VectorStore built and persisted successfully.
+2025-10-26 14:27:33,644 | INFO | rag_app | Uploaded 2 new files: ['2508.10104v1.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 14:27:33,645 | INFO | rag_app | Rebuilding index from data/: data
+2025-10-26 14:27:34,476 | INFO | rag_app | Uploaded 1 new files: ['2508.10104v1.pdf']
+2025-10-26 14:27:34,493 | INFO | rag_app | Rebuilding index from data/: data
+2025-10-26 14:27:39,504 | INFO | rag_app | Loaded 9 documents from data
+2025-10-26 14:27:39,506 | INFO | rag_app | Chunked into 873 chunks (size=800 overlap=200)
+2025-10-26 14:27:40,215 | INFO | rag_app | Loaded 9 documents from data
+2025-10-26 14:27:40,218 | INFO | rag_app | Chunked into 873 chunks (size=800 overlap=200)
+2025-10-26 14:27:43,009 | INFO | rag_app | Uploaded 1 new files: ['2112.01527v3.pdf']
+2025-10-26 14:27:43,019 | INFO | rag_app | Rebuilding index from data/: data
+2025-10-26 14:27:46,858 | INFO | rag_app | Loaded 9 documents from data
+2025-10-26 14:27:46,861 | INFO | rag_app | Chunked into 873 chunks (size=800 overlap=200)
+2025-10-26 14:27:52,426 | INFO | rag_app | VectorStore built and persisted successfully.
+2025-10-26 14:33:50,006 | DEBUG | rag_app | Logger initialized. APP_LOG_PATH=logs/app.log ERR_LOG_PATH=logs/error.log
+2025-10-26 14:33:50,007 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:33:50,007 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:33:50,007 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:33:55,626 | INFO | rag_app | Uploaded 2 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 14:33:55,629 | INFO | rag_app | Rebuilding index from data/: data
+2025-10-26 14:33:58,929 | INFO | rag_app | Loaded 9 documents from data
+2025-10-26 14:33:58,931 | INFO | rag_app | Chunked into 873 chunks (size=800 overlap=200)
+2025-10-26 14:34:16,941 | INFO | rag_app | VectorStore built and persisted successfully.
+2025-10-26 14:34:31,670 | INFO | rag_app | Uploaded 2 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 14:34:31,673 | INFO | rag_app | Rebuilding index from data/: data
+2025-10-26 14:34:34,844 | INFO | rag_app | Loaded 9 documents from data
+2025-10-26 14:34:34,846 | INFO | rag_app | Chunked into 873 chunks (size=800 overlap=200)
+2025-10-26 14:34:34,898 | INFO | rag_app | Uploaded 2 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 14:34:34,899 | INFO | rag_app | Rebuilding index from data/: data
+2025-10-26 14:34:38,682 | INFO | rag_app | Loaded 9 documents from data
+2025-10-26 14:34:38,685 | INFO | rag_app | Chunked into 873 chunks (size=800 overlap=200)
+2025-10-26 14:34:47,886 | INFO | rag_app | VectorStore built and persisted successfully.
+2025-10-26 14:36:43,029 | DEBUG | rag_app | Logger initialized. APP_LOG_PATH=logs/app.log ERR_LOG_PATH=logs/error.log
+2025-10-26 14:36:43,030 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:36:43,030 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:36:43,030 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:36:48,316 | INFO | rag_app | Uploaded 4 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf']
+2025-10-26 14:36:48,322 | INFO | rag_app | Rebuilding index from data/: data
+2025-10-26 14:36:51,868 | INFO | rag_app | Loaded 9 documents from data
+2025-10-26 14:36:51,871 | INFO | rag_app | Chunked into 873 chunks (size=800 overlap=200)
+2025-10-26 14:37:07,608 | INFO | rag_app | VectorStore built and persisted successfully.
+2025-10-26 14:37:16,130 | INFO | rag_app | Uploaded 4 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf']
+2025-10-26 14:37:16,131 | INFO | rag_app | Rebuilding index from data/: data
+2025-10-26 14:37:17,485 | INFO | rag_app | Uploaded 4 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf']
+2025-10-26 14:37:17,498 | INFO | rag_app | Rebuilding index from data/: data
+2025-10-26 14:37:22,230 | INFO | rag_app | Loaded 9 documents from data
+2025-10-26 14:37:22,233 | INFO | rag_app | Chunked into 873 chunks (size=800 overlap=200)
+2025-10-26 14:37:23,259 | INFO | rag_app | Loaded 9 documents from data
+2025-10-26 14:37:23,262 | INFO | rag_app | Chunked into 873 chunks (size=800 overlap=200)
+2025-10-26 14:37:33,719 | INFO | rag_app | VectorStore built and persisted successfully.
+2025-10-26 14:38:19,031 | DEBUG | rag_app | Logger initialized. APP_LOG_PATH=logs/app.log ERR_LOG_PATH=logs/error.log
+2025-10-26 14:38:19,032 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:38:19,032 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:38:19,032 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:38:23,256 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:38:23,257 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:38:23,257 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:38:23,263 | INFO | rag_app | Uploaded 1 new files: ['2508.10104v1.pdf']
+2025-10-26 14:38:23,265 | INFO | rag_app | Rebuilding index from data/: data
+2025-10-26 14:38:26,398 | INFO | rag_app | Loaded 9 documents from data
+2025-10-26 14:38:26,400 | INFO | rag_app | Chunked into 873 chunks (size=800 overlap=200)
+2025-10-26 14:38:43,591 | INFO | rag_app | VectorStore built and persisted successfully.
+2025-10-26 14:38:59,891 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:38:59,893 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:38:59,893 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:38:59,927 | INFO | rag_app | Uploaded 1 new files: ['2508.10104v1.pdf']
+2025-10-26 14:38:59,929 | INFO | rag_app | Rebuilding index from data/: data
+2025-10-26 14:39:03,062 | INFO | rag_app | Loaded 9 documents from data
+2025-10-26 14:39:03,065 | INFO | rag_app | Chunked into 873 chunks (size=800 overlap=200)
+2025-10-26 14:39:20,141 | INFO | rag_app | VectorStore built and persisted successfully.
+2025-10-26 14:39:25,802 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:39:25,803 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:39:25,803 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:39:25,815 | INFO | rag_app | Uploaded 1 new files: ['2508.10104v1.pdf']
+2025-10-26 14:39:25,817 | INFO | rag_app | Rebuilding index from data/: data
+2025-10-26 14:39:29,063 | INFO | rag_app | Loaded 9 documents from data
+2025-10-26 14:39:29,065 | INFO | rag_app | Chunked into 873 chunks (size=800 overlap=200)
+2025-10-26 14:39:45,614 | INFO | rag_app | VectorStore built and persisted successfully.
+2025-10-26 14:39:45,621 | INFO | rag_app | UI question: 'what is rleg' (use_llm=True)
+2025-10-26 14:39:45,622 | INFO | rag_app | ask() called. question='what is rleg' top_k=12 use_llm=True
+2025-10-26 14:39:45,623 | DEBUG | rag_app | Topic flags: want_rleg=True want_dino=False
+2025-10-26 14:39:45,946 | DEBUG | rag_app | generic retrieval returned 12 hits
+2025-10-26 14:39:45,953 | DEBUG | rag_app | RLEG retrieval returned 12 hits
+2025-10-26 14:39:45,953 | DEBUG | rag_app | Deduped hits: 24 -> 12
+2025-10-26 14:39:54,043 | INFO | rag_app | Generated answer length=290 chars
+2025-10-26 14:39:54,055 | INFO | rag_app | UI answer len=290 chars
+2025-10-26 14:42:39,551 | DEBUG | rag_app | Logger initialized. APP_LOG_PATH=logs/app.log ERR_LOG_PATH=logs/error.log
+2025-10-26 14:42:39,552 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:42:39,552 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:42:39,552 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:42:45,949 | INFO | rag_app | Uploaded 3 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 14:42:45,954 | INFO | rag_app | Incremental add for 3 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 14:42:47,605 | INFO | rag_app | Loaded 3 docs from new_paths
+2025-10-26 14:42:47,607 | INFO | rag_app | New docs chunked into 626 chunks (size=800 overlap=200)
+2025-10-26 14:46:15,532 | DEBUG | rag_app | Logger initialized. APP_LOG_PATH=logs/app.log ERR_LOG_PATH=logs/error.log
+2025-10-26 14:46:15,533 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:46:15,533 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:46:15,533 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:46:20,550 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:46:20,551 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:46:20,553 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:46:20,656 | INFO | rag_app | Uploaded 4 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf']
+2025-10-26 14:46:20,661 | INFO | rag_app | Full rebuild requested. Scanning entire data dir: data
+2025-10-26 14:46:24,220 | INFO | rag_app | Loaded 9 docs for full rebuild
+2025-10-26 14:46:24,222 | INFO | rag_app | Full rebuild produced 873 chunks (size=800 overlap=200)
+2025-10-26 14:46:41,147 | INFO | rag_app | Full rebuild complete.
+2025-10-26 14:46:47,371 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:46:47,373 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:46:47,373 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:46:47,484 | INFO | rag_app | Uploaded 4 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf']
+2025-10-26 14:46:47,485 | INFO | rag_app | Full rebuild requested. Scanning entire data dir: data
+2025-10-26 14:46:50,853 | INFO | rag_app | Loaded 9 docs for full rebuild
+2025-10-26 14:46:50,855 | INFO | rag_app | Full rebuild produced 873 chunks (size=800 overlap=200)
+2025-10-26 14:47:07,407 | INFO | rag_app | Full rebuild complete.
+2025-10-26 14:47:16,533 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:47:16,533 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:47:16,534 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:47:16,636 | INFO | rag_app | Uploaded 4 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf']
+2025-10-26 14:47:16,637 | INFO | rag_app | Full rebuild requested. Scanning entire data dir: data
+2025-10-26 14:47:20,419 | INFO | rag_app | Loaded 9 docs for full rebuild
+2025-10-26 14:47:20,421 | INFO | rag_app | Full rebuild produced 873 chunks (size=800 overlap=200)
+2025-10-26 14:47:36,637 | INFO | rag_app | Full rebuild complete.
+2025-10-26 14:47:36,650 | INFO | rag_app | UI question: 'what is aeon' (use_llm=True)
+2025-10-26 14:47:36,653 | INFO | rag_app | ask() question='what is aeon' top_k=12 use_llm=True
+2025-10-26 14:47:36,653 | DEBUG | rag_app | topic flags: want_rleg=False want_dino=False
+2025-10-26 14:47:36,938 | DEBUG | rag_app | generic retrieval -> 12 hits
+2025-10-26 14:47:36,938 | DEBUG | rag_app | dedup hits: 12 -> 12
+2025-10-26 14:47:41,459 | INFO | rag_app | answer generated, 286 chars
+2025-10-26 14:47:41,471 | INFO | rag_app | UI answer len=286 chars
+2025-10-26 14:48:08,655 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:48:08,657 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:48:08,658 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:48:08,766 | INFO | rag_app | Uploaded 5 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf', 'Job description - 6 months internship (technology Hiring) (2).docx']
+2025-10-26 14:48:08,768 | INFO | rag_app | Full rebuild requested. Scanning entire data dir: data
+2025-10-26 14:48:12,202 | INFO | rag_app | Loaded 9 docs for full rebuild
+2025-10-26 14:48:12,204 | INFO | rag_app | Full rebuild produced 873 chunks (size=800 overlap=200)
+2025-10-26 14:48:28,781 | INFO | rag_app | Full rebuild complete.
+2025-10-26 14:48:40,285 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:48:40,286 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:48:40,286 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:48:40,382 | INFO | rag_app | Uploaded 5 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf', 'Job description - 6 months internship (technology Hiring) (2).docx']
+2025-10-26 14:48:40,383 | INFO | rag_app | Full rebuild requested. Scanning entire data dir: data
+2025-10-26 14:48:43,914 | INFO | rag_app | Loaded 9 docs for full rebuild
+2025-10-26 14:48:43,918 | INFO | rag_app | Full rebuild produced 873 chunks (size=800 overlap=200)
+2025-10-26 14:49:00,151 | INFO | rag_app | Full rebuild complete.
+2025-10-26 14:49:08,876 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:49:08,878 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:49:08,878 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:49:09,024 | INFO | rag_app | Uploaded 5 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf', 'Job description - 6 months internship (technology Hiring) (2).docx']
+2025-10-26 14:49:09,026 | INFO | rag_app | Full rebuild requested. Scanning entire data dir: data
+2025-10-26 14:49:09,109 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:49:09,109 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:49:09,115 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:49:09,247 | INFO | rag_app | Uploaded 5 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf', 'Job description - 6 months internship (technology Hiring) (2).docx']
+2025-10-26 14:49:09,247 | INFO | rag_app | Full rebuild requested. Scanning entire data dir: data
+2025-10-26 14:49:16,237 | INFO | rag_app | Loaded 9 docs for full rebuild
+2025-10-26 14:49:16,262 | INFO | rag_app | Full rebuild produced 873 chunks (size=800 overlap=200)
+2025-10-26 14:49:16,437 | INFO | rag_app | Loaded 9 docs for full rebuild
+2025-10-26 14:49:16,440 | INFO | rag_app | Full rebuild produced 873 chunks (size=800 overlap=200)
+2025-10-26 14:49:42,665 | INFO | rag_app | Full rebuild complete.
+2025-10-26 14:49:42,668 | INFO | rag_app | Full rebuild complete.
+2025-10-26 14:49:42,953 | INFO | rag_app | UI question: 'explain the job description' (use_llm=True)
+2025-10-26 14:49:42,954 | INFO | rag_app | ask() question='explain the job description' top_k=12 use_llm=True
+2025-10-26 14:49:42,954 | DEBUG | rag_app | topic flags: want_rleg=False want_dino=False
+2025-10-26 14:49:42,991 | DEBUG | rag_app | generic retrieval -> 12 hits
+2025-10-26 14:49:42,991 | DEBUG | rag_app | dedup hits: 12 -> 12
+2025-10-26 14:49:59,301 | INFO | rag_app | answer generated, 1 chars
+2025-10-26 14:49:59,315 | INFO | rag_app | UI answer len=1 chars
+2025-10-26 14:51:10,958 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:51:10,960 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:51:10,961 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:51:11,252 | INFO | rag_app | Uploaded 4 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf']
+2025-10-26 14:51:11,256 | INFO | rag_app | Full rebuild requested. Scanning entire data dir: data
+2025-10-26 14:51:15,403 | INFO | rag_app | Loaded 9 docs for full rebuild
+2025-10-26 14:51:15,405 | INFO | rag_app | Full rebuild produced 873 chunks (size=800 overlap=200)
+2025-10-26 14:51:16,296 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:51:16,297 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:51:16,297 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:51:16,390 | INFO | rag_app | Uploaded 5 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf', 'geethika.txt']
+2025-10-26 14:51:16,392 | INFO | rag_app | Full rebuild requested. Scanning entire data dir: data
+2025-10-26 14:51:20,095 | INFO | rag_app | Loaded 10 docs for full rebuild
+2025-10-26 14:51:20,097 | INFO | rag_app | Full rebuild produced 874 chunks (size=800 overlap=200)
+2025-10-26 14:51:42,304 | INFO | rag_app | Full rebuild complete.
+2025-10-26 14:51:46,103 | INFO | rag_app | Full rebuild complete.
+2025-10-26 14:51:53,229 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:51:53,230 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:51:53,230 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:51:53,577 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:51:53,577 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:51:53,577 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:51:53,578 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': PosixPath('data'), 'sqlite_path': PosixPath('storage/chunks.db'), 'faiss_index_path': PosixPath('storage/index.faiss'), 'id_map_path': PosixPath('storage/chunk_ids.npy'), 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 200, 'default_top_k': 12}
+2025-10-26 14:51:53,579 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 14:51:53,579 | DEBUG | rag_app | VectorStore initialized. sqlite=storage/chunks.db faiss=storage/index.faiss idmap=storage/chunk_ids.npy
+2025-10-26 14:51:53,644 | INFO | rag_app | Uploaded 5 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf', 'geethika.txt']
+2025-10-26 14:51:53,645 | INFO | rag_app | Full rebuild requested. Scanning entire data dir: data
+2025-10-26 14:51:53,660 | INFO | rag_app | Uploaded 5 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf', 'geethika.txt']
+2025-10-26 14:51:53,660 | INFO | rag_app | Full rebuild requested. Scanning entire data dir: data
+2025-10-26 14:52:02,416 | INFO | rag_app | Loaded 10 docs for full rebuild
+2025-10-26 14:52:02,634 | INFO | rag_app | Full rebuild produced 874 chunks (size=800 overlap=200)
+2025-10-26 14:52:02,706 | INFO | rag_app | Loaded 10 docs for full rebuild
+2025-10-26 14:52:02,710 | INFO | rag_app | Full rebuild produced 874 chunks (size=800 overlap=200)
+2025-10-26 14:52:28,780 | INFO | rag_app | Full rebuild complete.
+2025-10-26 14:52:28,785 | INFO | rag_app | Full rebuild complete.
+2025-10-26 14:52:29,032 | INFO | rag_app | UI question: 'who is Geethika' (use_llm=True)
+2025-10-26 14:52:29,032 | INFO | rag_app | ask() question='who is Geethika' top_k=12 use_llm=True
+2025-10-26 14:52:29,033 | DEBUG | rag_app | topic flags: want_rleg=False want_dino=False
+2025-10-26 14:52:29,170 | DEBUG | rag_app | generic retrieval -> 12 hits
+2025-10-26 14:52:29,171 | DEBUG | rag_app | dedup hits: 12 -> 12
+2025-10-26 14:52:33,401 | INFO | rag_app | answer generated, 155 chars
+2025-10-26 14:52:33,412 | INFO | rag_app | UI answer len=155 chars
+2025-10-26 15:03:56,231 | DEBUG | rag_app | Logger initialized. APP_LOG_PATH=logs/app.log ERR_LOG_PATH=logs/error.log
+2025-10-26 15:03:56,232 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:03:56,232 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:03:56,233 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:03:56,233 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:04:02,121 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:04:02,121 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:04:02,122 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:04:02,122 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:04:02,174 | INFO | rag_app | Uploaded 4 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf']
+2025-10-26 15:04:02,184 | INFO | rag_app | Incremental add for 4 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf']
+2025-10-26 15:04:04,548 | INFO | rag_app | Loaded 4 docs from new_paths
+2025-10-26 15:04:04,550 | INFO | rag_app | New docs chunked into 587 chunks (size=800 overlap=150)
+2025-10-26 15:05:48,304 | DEBUG | rag_app | Logger initialized. APP_LOG_PATH=logs/app.log ERR_LOG_PATH=logs/error.log
+2025-10-26 15:05:48,306 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:05:48,306 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:05:48,306 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:05:48,306 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:05:55,795 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:05:55,796 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:05:55,797 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:05:55,797 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:05:55,841 | INFO | rag_app | Uploaded 4 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf']
+2025-10-26 15:05:55,856 | INFO | rag_app | Incremental add for 4 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf']
+2025-10-26 15:05:58,060 | INFO | rag_app | Loaded 4 docs from new_paths
+2025-10-26 15:05:58,062 | INFO | rag_app | New docs chunked into 587 chunks (size=800 overlap=150)
+2025-10-26 15:06:18,746 | DEBUG | rag_app | Logger initialized. APP_LOG_PATH=logs/app.log ERR_LOG_PATH=logs/error.log
+2025-10-26 15:06:18,746 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:06:18,746 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:06:18,747 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:06:18,747 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:06:25,225 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:06:25,227 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:06:25,229 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:06:25,229 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:06:25,310 | INFO | rag_app | Uploaded 5 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf', 'ANOMALY TRANSFORMER TIME SERIES ANOMALY.pdf']
+2025-10-26 15:06:25,315 | INFO | rag_app | Incremental add for 5 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf', 'ANOMALY TRANSFORMER TIME SERIES ANOMALY.pdf']
+2025-10-26 15:06:28,453 | INFO | rag_app | Loaded 5 docs from new_paths
+2025-10-26 15:06:28,454 | INFO | rag_app | New docs chunked into 716 chunks (size=800 overlap=150)
+2025-10-26 15:08:12,270 | DEBUG | rag_app | Logger initialized. APP_LOG_PATH=logs/app.log ERR_LOG_PATH=logs/error.log
+2025-10-26 15:08:12,271 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:08:12,272 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:08:12,272 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:08:12,272 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:08:18,294 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:08:18,295 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:08:18,298 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:08:18,298 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:08:18,358 | INFO | rag_app | Uploaded 4 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf']
+2025-10-26 15:08:18,359 | INFO | rag_app | Incremental add for 4 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'Aeon Sponsorship Brochure (2).pdf']
+2025-10-26 15:08:20,526 | INFO | rag_app | Loaded 4 docs from new_paths
+2025-10-26 15:08:20,528 | INFO | rag_app | New docs chunked into 587 chunks (size=800 overlap=150)
+2025-10-26 15:11:49,609 | DEBUG | rag_app | Logger initialized. APP_LOG_PATH=logs/app.log ERR_LOG_PATH=logs/error.log
+2025-10-26 15:11:49,610 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:11:49,610 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:11:49,610 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:11:49,610 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:11:54,019 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:11:54,019 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:11:54,019 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:11:54,019 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:11:54,047 | INFO | rag_app | Uploaded 3 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:11:54,049 | INFO | rag_app | build_index() incremental mode with 3 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:11:55,738 | INFO | rag_app | Loaded 3 docs from new_paths for incremental add
+2025-10-26 15:11:55,740 | INFO | rag_app | New docs chunked into 579 chunks (size=800 overlap=150)
+2025-10-26 15:11:55,740 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:11:55,741 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:11:58,864 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:11:58,866 | INFO | rag_app | Full rebuild fallback produced 809 chunks (size=800 overlap=150)
+2025-10-26 15:12:17,546 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:12:28,503 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:12:28,503 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:12:28,503 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:12:28,503 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:12:28,532 | INFO | rag_app | Uploaded 3 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:12:28,539 | INFO | rag_app | build_index() incremental mode with 3 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:12:30,102 | INFO | rag_app | Loaded 3 docs from new_paths for incremental add
+2025-10-26 15:12:30,103 | INFO | rag_app | New docs chunked into 579 chunks (size=800 overlap=150)
+2025-10-26 15:12:30,104 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:12:30,104 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:12:33,269 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:12:33,271 | INFO | rag_app | Full rebuild fallback produced 809 chunks (size=800 overlap=150)
+2025-10-26 15:12:49,626 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:12:54,356 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:12:54,357 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:12:54,357 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:12:54,357 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:12:54,398 | INFO | rag_app | Uploaded 3 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:12:54,400 | INFO | rag_app | build_index() incremental mode with 3 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:12:54,578 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:12:54,584 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:12:54,616 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:12:54,616 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:12:54,678 | INFO | rag_app | Uploaded 3 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:12:54,692 | INFO | rag_app | build_index() incremental mode with 3 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:12:57,351 | INFO | rag_app | Loaded 3 docs from new_paths for incremental add
+2025-10-26 15:12:57,356 | INFO | rag_app | New docs chunked into 579 chunks (size=800 overlap=150)
+2025-10-26 15:12:57,363 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:12:57,366 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:12:57,573 | INFO | rag_app | Loaded 3 docs from new_paths for incremental add
+2025-10-26 15:12:57,575 | INFO | rag_app | New docs chunked into 579 chunks (size=800 overlap=150)
+2025-10-26 15:12:57,579 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:12:57,585 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:13:03,654 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:13:03,659 | INFO | rag_app | Full rebuild fallback produced 809 chunks (size=800 overlap=150)
+2025-10-26 15:13:03,673 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:13:03,675 | INFO | rag_app | Full rebuild fallback produced 809 chunks (size=800 overlap=150)
+2025-10-26 15:13:27,803 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:13:28,454 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:13:28,464 | INFO | rag_app | UI question: 'WHAT IS DINOV3' (use_llm=True)
+2025-10-26 15:13:28,466 | INFO | rag_app | ask() question='WHAT IS DINOV3' k_init=50 k_final=12 use_llm=True
+2025-10-26 15:13:28,467 | DEBUG | rag_app | topic flags: want_rleg=False want_dino=True
+2025-10-26 15:13:28,717 | DEBUG | rag_app | generic retrieval -> 50 hits
+2025-10-26 15:13:28,726 | DEBUG | rag_app | DINOv3 retrieval -> 50 hits
+2025-10-26 15:13:37,370 | INFO | rag_app | answer generated, 317 chars
+2025-10-26 15:13:37,373 | INFO | rag_app | answer confidence=1.000
+2025-10-26 15:13:37,382 | INFO | rag_app | UI answer len=317 chars conf=1.000
+2025-10-26 15:14:18,521 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:14:18,523 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:14:18,523 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:14:18,523 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:14:18,566 | INFO | rag_app | Uploaded 3 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:14:18,589 | INFO | rag_app | build_index() incremental mode with 3 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:14:19,135 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:14:19,146 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:14:19,146 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:14:19,174 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:14:19,248 | INFO | rag_app | Uploaded 3 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:14:19,268 | INFO | rag_app | build_index() incremental mode with 3 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:14:21,510 | INFO | rag_app | Loaded 3 docs from new_paths for incremental add
+2025-10-26 15:14:21,511 | INFO | rag_app | New docs chunked into 579 chunks (size=800 overlap=150)
+2025-10-26 15:14:21,533 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:14:21,540 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:14:22,170 | INFO | rag_app | Loaded 3 docs from new_paths for incremental add
+2025-10-26 15:14:22,185 | INFO | rag_app | New docs chunked into 579 chunks (size=800 overlap=150)
+2025-10-26 15:14:22,203 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:14:22,210 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:14:28,192 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:14:28,202 | INFO | rag_app | Full rebuild fallback produced 809 chunks (size=800 overlap=150)
+2025-10-26 15:14:28,286 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:14:28,288 | INFO | rag_app | Full rebuild fallback produced 809 chunks (size=800 overlap=150)
+2025-10-26 15:14:50,227 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:14:50,249 | INFO | rag_app | UI question: 'WHAT IS DINOV3 AND RLEG' (use_llm=True)
+2025-10-26 15:14:50,252 | INFO | rag_app | ask() question='WHAT IS DINOV3 AND RLEG' k_init=50 k_final=12 use_llm=True
+2025-10-26 15:14:50,254 | DEBUG | rag_app | topic flags: want_rleg=True want_dino=True
+2025-10-26 15:14:50,748 | DEBUG | rag_app | generic retrieval -> 50 hits
+2025-10-26 15:14:51,515 | DEBUG | rag_app | RLEG retrieval -> 50 hits
+2025-10-26 15:14:51,582 | DEBUG | rag_app | DINOv3 retrieval -> 50 hits
+2025-10-26 15:14:51,588 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:14:59,048 | INFO | rag_app | answer generated, 318 chars
+2025-10-26 15:14:59,052 | INFO | rag_app | answer confidence=1.000
+2025-10-26 15:14:59,061 | INFO | rag_app | UI answer len=318 chars conf=1.000
+2025-10-26 15:18:40,590 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:18:40,592 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:18:40,592 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:18:40,592 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:18:40,687 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:18:40,687 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:18:40,687 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:18:40,687 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:18:40,704 | INFO | rag_app | Uploaded 3 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:18:40,708 | INFO | rag_app | build_index() incremental mode with 3 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:18:40,737 | INFO | rag_app | Uploaded 3 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:18:40,754 | INFO | rag_app | build_index() incremental mode with 3 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:18:40,962 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:18:40,983 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:18:41,003 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:18:41,050 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:18:41,398 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:18:41,413 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:18:41,435 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:18:41,435 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:18:41,495 | INFO | rag_app | Uploaded 3 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:18:41,518 | INFO | rag_app | build_index() incremental mode with 3 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:18:44,859 | INFO | rag_app | Loaded 3 docs from new_paths for incremental add
+2025-10-26 15:18:44,871 | INFO | rag_app | New docs chunked into 579 chunks (size=800 overlap=150)
+2025-10-26 15:18:44,884 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:18:44,890 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:18:46,053 | INFO | rag_app | Loaded 3 docs from new_paths for incremental add
+2025-10-26 15:18:46,108 | INFO | rag_app | New docs chunked into 579 chunks (size=800 overlap=150)
+2025-10-26 15:18:46,193 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:18:46,212 | INFO | rag_app | Loaded 3 docs from new_paths for incremental add
+2025-10-26 15:18:46,337 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:18:46,357 | INFO | rag_app | New docs chunked into 579 chunks (size=800 overlap=150)
+2025-10-26 15:18:46,371 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:18:46,371 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:18:55,237 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:18:55,271 | INFO | rag_app | Full rebuild fallback produced 809 chunks (size=800 overlap=150)
+2025-10-26 15:18:55,574 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:18:55,592 | INFO | rag_app | Full rebuild fallback produced 809 chunks (size=800 overlap=150)
+2025-10-26 15:18:55,631 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:18:55,633 | INFO | rag_app | Full rebuild fallback produced 809 chunks (size=800 overlap=150)
+2025-10-26 15:19:31,185 | DEBUG | rag_app | Logger initialized. APP_LOG_PATH=logs/app.log ERR_LOG_PATH=logs/error.log
+2025-10-26 15:19:31,186 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:19:31,186 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:19:31,186 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:19:31,186 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:19:42,075 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:19:42,076 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:19:42,076 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:19:42,076 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:19:42,082 | INFO | rag_app | Uploaded 1 new files: ['2112.01527v3.pdf']
+2025-10-26 15:19:42,083 | INFO | rag_app | build_index() incremental mode with 1 new file(s): ['2112.01527v3.pdf']
+2025-10-26 15:19:42,299 | INFO | rag_app | Loaded 1 docs from new_paths for incremental add
+2025-10-26 15:19:42,300 | INFO | rag_app | New docs chunked into 123 chunks (size=800 overlap=150)
+2025-10-26 15:19:42,300 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:19:42,301 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:19:45,472 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:19:45,474 | INFO | rag_app | Full rebuild fallback produced 809 chunks (size=800 overlap=150)
+2025-10-26 15:20:01,141 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:20:07,814 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:20:07,815 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:20:07,815 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:20:07,815 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:20:07,822 | INFO | rag_app | Uploaded 1 new files: ['2112.01527v3.pdf']
+2025-10-26 15:20:07,826 | INFO | rag_app | build_index() incremental mode with 1 new file(s): ['2112.01527v3.pdf']
+2025-10-26 15:20:08,050 | INFO | rag_app | Loaded 1 docs from new_paths for incremental add
+2025-10-26 15:20:08,051 | INFO | rag_app | New docs chunked into 123 chunks (size=800 overlap=150)
+2025-10-26 15:20:08,051 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:20:08,052 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:20:11,306 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:20:11,308 | INFO | rag_app | Full rebuild fallback produced 809 chunks (size=800 overlap=150)
+2025-10-26 15:20:20,805 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:20:20,806 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:20:20,806 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:20:20,806 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:20:20,824 | INFO | rag_app | Uploaded 2 new files: ['2112.01527v3.pdf', '2112.01527v3.pdf']
+2025-10-26 15:20:20,825 | INFO | rag_app | build_index() incremental mode with 2 new file(s): ['2112.01527v3.pdf', '2112.01527v3.pdf']
+2025-10-26 15:20:21,462 | INFO | rag_app | Loaded 2 docs from new_paths for incremental add
+2025-10-26 15:20:21,463 | INFO | rag_app | New docs chunked into 246 chunks (size=800 overlap=150)
+2025-10-26 15:20:21,464 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:20:21,464 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:20:24,845 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:20:24,850 | INFO | rag_app | Full rebuild fallback produced 809 chunks (size=800 overlap=150)
+2025-10-26 15:20:29,104 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:20:39,794 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:20:44,586 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:20:44,586 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:20:44,586 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:20:44,586 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:20:44,596 | INFO | rag_app | Uploaded 2 new files: ['2112.01527v3.pdf', '2112.01527v3.pdf']
+2025-10-26 15:20:44,597 | INFO | rag_app | build_index() incremental mode with 2 new file(s): ['2112.01527v3.pdf', '2112.01527v3.pdf']
+2025-10-26 15:20:44,993 | INFO | rag_app | Loaded 2 docs from new_paths for incremental add
+2025-10-26 15:20:44,994 | INFO | rag_app | New docs chunked into 246 chunks (size=800 overlap=150)
+2025-10-26 15:20:44,994 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:20:44,995 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:20:48,197 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:20:48,199 | INFO | rag_app | Full rebuild fallback produced 809 chunks (size=800 overlap=150)
+2025-10-26 15:21:03,913 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:21:08,116 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:21:08,116 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:21:08,116 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:21:08,116 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:21:08,131 | INFO | rag_app | Uploaded 2 new files: ['2112.01527v3.pdf', '2112.01527v3.pdf']
+2025-10-26 15:21:08,133 | INFO | rag_app | build_index() incremental mode with 2 new file(s): ['2112.01527v3.pdf', '2112.01527v3.pdf']
+2025-10-26 15:21:08,328 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:21:08,328 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:21:08,329 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:21:08,329 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:21:08,381 | INFO | rag_app | Uploaded 2 new files: ['2112.01527v3.pdf', '2112.01527v3.pdf']
+2025-10-26 15:21:08,397 | INFO | rag_app | build_index() incremental mode with 2 new file(s): ['2112.01527v3.pdf', '2112.01527v3.pdf']
+2025-10-26 15:21:08,631 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 150, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'rrf', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:21:08,631 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:21:08,631 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:21:08,631 | INFO | rag_app | Using RRF reranker (k_base=60).
+2025-10-26 15:21:08,683 | INFO | rag_app | Uploaded 2 new files: ['2112.01527v3.pdf', '2112.01527v3.pdf']
+2025-10-26 15:21:08,698 | INFO | rag_app | build_index() incremental mode with 2 new file(s): ['2112.01527v3.pdf', '2112.01527v3.pdf']
+2025-10-26 15:21:08,712 | INFO | rag_app | Loaded 2 docs from new_paths for incremental add
+2025-10-26 15:21:08,713 | INFO | rag_app | New docs chunked into 246 chunks (size=800 overlap=150)
+2025-10-26 15:21:08,729 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:21:08,744 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:21:09,934 | INFO | rag_app | Loaded 2 docs from new_paths for incremental add
+2025-10-26 15:21:09,959 | INFO | rag_app | New docs chunked into 246 chunks (size=800 overlap=150)
+2025-10-26 15:21:09,971 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:21:09,971 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:21:10,111 | INFO | rag_app | Loaded 2 docs from new_paths for incremental add
+2025-10-26 15:21:10,133 | INFO | rag_app | New docs chunked into 246 chunks (size=800 overlap=150)
+2025-10-26 15:21:10,146 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:21:10,167 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:21:19,216 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:21:19,219 | INFO | rag_app | Full rebuild fallback produced 809 chunks (size=800 overlap=150)
+2025-10-26 15:21:19,220 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:21:19,232 | INFO | rag_app | Full rebuild fallback produced 809 chunks (size=800 overlap=150)
+2025-10-26 15:21:19,353 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:21:19,355 | INFO | rag_app | Full rebuild fallback produced 809 chunks (size=800 overlap=150)
+2025-10-26 15:21:43,914 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:21:43,919 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:21:44,143 | INFO | rag_app | UI question: 'WHAT IS EOMT' (use_llm=True)
+2025-10-26 15:21:44,144 | INFO | rag_app | ask() question='WHAT IS EOMT' k_init=50 k_final=12 use_llm=True
+2025-10-26 15:21:44,147 | DEBUG | rag_app | topic flags: want_rleg=False want_dino=False
+2025-10-26 15:21:44,412 | DEBUG | rag_app | generic retrieval -> 50 hits
+2025-10-26 15:21:50,386 | INFO | rag_app | answer generated, 269 chars
+2025-10-26 15:21:50,389 | INFO | rag_app | answer confidence=1.000
+2025-10-26 15:21:50,399 | INFO | rag_app | UI answer len=269 chars conf=1.000
+2025-10-26 15:31:24,292 | DEBUG | rag_app | Logger initialized. APP_LOG_PATH=logs/app.log ERR_LOG_PATH=logs/error.log
+2025-10-26 15:31:24,293 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:31:24,293 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:31:24,294 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:31:24,294 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:31:33,872 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:31:33,872 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:31:33,873 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:31:33,873 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:31:33,887 | INFO | rag_app | Uploaded 2 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:31:33,888 | INFO | rag_app | build_index() incremental mode with 2 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:31:34,627 | INFO | rag_app | Loaded 2 docs from new_paths for incremental add
+2025-10-26 15:31:34,628 | INFO | rag_app | New docs chunked into 293 chunks (size=800 overlap=300)
+2025-10-26 15:31:34,628 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:31:34,629 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:31:37,731 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:31:37,734 | INFO | rag_app | Full rebuild fallback produced 1049 chunks (size=800 overlap=300)
+2025-10-26 15:31:56,417 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:32:05,947 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:32:05,947 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:32:05,948 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:32:05,948 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:32:05,971 | INFO | rag_app | Uploaded 2 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:32:05,972 | INFO | rag_app | build_index() incremental mode with 2 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:32:06,200 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:32:06,201 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:32:06,201 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:32:06,201 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:32:06,238 | INFO | rag_app | Uploaded 2 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:32:06,245 | INFO | rag_app | build_index() incremental mode with 2 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:32:06,535 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:32:06,535 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:32:06,548 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:32:06,555 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:32:06,646 | INFO | rag_app | Uploaded 2 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:32:06,675 | INFO | rag_app | build_index() incremental mode with 2 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:32:07,386 | INFO | rag_app | Loaded 2 docs from new_paths for incremental add
+2025-10-26 15:32:07,393 | INFO | rag_app | New docs chunked into 293 chunks (size=800 overlap=300)
+2025-10-26 15:32:07,393 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:32:07,411 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:32:07,804 | INFO | rag_app | Loaded 2 docs from new_paths for incremental add
+2025-10-26 15:32:07,824 | INFO | rag_app | New docs chunked into 293 chunks (size=800 overlap=300)
+2025-10-26 15:32:07,836 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:32:07,857 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:32:08,682 | INFO | rag_app | Loaded 2 docs from new_paths for incremental add
+2025-10-26 15:32:08,694 | INFO | rag_app | New docs chunked into 293 chunks (size=800 overlap=300)
+2025-10-26 15:32:08,713 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:32:08,713 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:32:17,495 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:32:17,522 | INFO | rag_app | Full rebuild fallback produced 1049 chunks (size=800 overlap=300)
+2025-10-26 15:32:17,553 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:32:17,556 | INFO | rag_app | Full rebuild fallback produced 1049 chunks (size=800 overlap=300)
+2025-10-26 15:32:17,556 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:32:17,559 | INFO | rag_app | Full rebuild fallback produced 1049 chunks (size=800 overlap=300)
+2025-10-26 15:32:58,010 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:32:58,031 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:32:59,263 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:33:20,417 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:33:20,418 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:33:20,419 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:33:20,419 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:33:20,439 | INFO | rag_app | Uploaded 2 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:33:20,441 | INFO | rag_app | build_index() incremental mode with 2 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:33:20,520 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:33:20,520 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:33:20,520 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:33:20,520 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:33:20,562 | INFO | rag_app | Uploaded 2 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:33:20,594 | INFO | rag_app | build_index() incremental mode with 2 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:33:20,721 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:33:20,736 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:33:20,759 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:33:20,770 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:33:21,042 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:33:21,042 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:33:21,042 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:33:21,052 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:33:21,164 | INFO | rag_app | Uploaded 2 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:33:21,228 | INFO | rag_app | build_index() incremental mode with 2 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:33:21,660 | INFO | rag_app | Loaded 2 docs from new_paths for incremental add
+2025-10-26 15:33:21,674 | INFO | rag_app | New docs chunked into 293 chunks (size=800 overlap=300)
+2025-10-26 15:33:21,693 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:33:21,698 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:33:22,221 | INFO | rag_app | Loaded 2 docs from new_paths for incremental add
+2025-10-26 15:33:22,248 | INFO | rag_app | New docs chunked into 293 chunks (size=800 overlap=300)
+2025-10-26 15:33:22,249 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:33:22,280 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:33:22,959 | INFO | rag_app | Loaded 2 docs from new_paths for incremental add
+2025-10-26 15:33:23,086 | INFO | rag_app | New docs chunked into 293 chunks (size=800 overlap=300)
+2025-10-26 15:33:23,099 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:33:23,133 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:33:31,693 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:33:31,708 | INFO | rag_app | Full rebuild fallback produced 1049 chunks (size=800 overlap=300)
+2025-10-26 15:33:31,966 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:33:31,967 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:33:31,969 | INFO | rag_app | Full rebuild fallback produced 1049 chunks (size=800 overlap=300)
+2025-10-26 15:33:31,971 | INFO | rag_app | Full rebuild fallback produced 1049 chunks (size=800 overlap=300)
+2025-10-26 15:34:09,417 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:34:09,419 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:34:09,420 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:34:09,420 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:34:09,452 | INFO | rag_app | Uploaded 2 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:34:09,457 | INFO | rag_app | build_index() incremental mode with 2 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:34:11,223 | INFO | rag_app | Loaded 2 docs from new_paths for incremental add
+2025-10-26 15:34:11,227 | INFO | rag_app | New docs chunked into 293 chunks (size=800 overlap=300)
+2025-10-26 15:34:11,228 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:34:11,228 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:34:15,774 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:34:15,777 | INFO | rag_app | Full rebuild fallback produced 1049 chunks (size=800 overlap=300)
+2025-10-26 15:34:16,345 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:34:17,823 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:34:18,414 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:34:33,606 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:34:33,620 | INFO | rag_app | UI question: 'what is EOMT' (use_llm=True)
+2025-10-26 15:34:33,621 | INFO | rag_app | ask() question='what is EOMT' k_init=50 k_final=12 use_llm=True
+2025-10-26 15:34:33,622 | DEBUG | rag_app | topic flags: want_rleg=False want_dino=False
+2025-10-26 15:34:34,029 | DEBUG | rag_app | generic retrieval -> 50 hits
+2025-10-26 15:35:18,182 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:35:18,184 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:35:18,184 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:35:18,185 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:35:18,231 | INFO | rag_app | Uploaded 2 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:35:18,232 | INFO | rag_app | build_index() incremental mode with 2 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:35:18,902 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:35:18,926 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:35:18,952 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:35:18,952 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:35:19,033 | INFO | rag_app | Uploaded 2 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:35:19,052 | INFO | rag_app | build_index() incremental mode with 2 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:35:19,052 | INFO | rag_app | Loaded 2 docs from new_paths for incremental add
+2025-10-26 15:35:19,054 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:35:19,055 | INFO | rag_app | New docs chunked into 293 chunks (size=800 overlap=300)
+2025-10-26 15:35:19,056 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:35:19,059 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:35:19,075 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:35:19,087 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:35:19,088 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:35:19,152 | INFO | rag_app | Uploaded 2 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:35:19,324 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:35:19,330 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:35:19,330 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:35:19,286 | INFO | rag_app | build_index() incremental mode with 2 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:35:19,330 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:35:19,514 | INFO | rag_app | Uploaded 2 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:35:19,579 | INFO | rag_app | build_index() incremental mode with 2 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf']
+2025-10-26 15:35:22,194 | INFO | rag_app | Loaded 2 docs from new_paths for incremental add
+2025-10-26 15:35:22,231 | INFO | rag_app | New docs chunked into 293 chunks (size=800 overlap=300)
+2025-10-26 15:35:22,247 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:35:22,267 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:35:22,330 | INFO | rag_app | Loaded 2 docs from new_paths for incremental add
+2025-10-26 15:35:22,349 | INFO | rag_app | New docs chunked into 293 chunks (size=800 overlap=300)
+2025-10-26 15:35:22,370 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:35:22,374 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:35:22,972 | INFO | rag_app | Loaded 2 docs from new_paths for incremental add
+2025-10-26 15:35:23,218 | INFO | rag_app | New docs chunked into 293 chunks (size=800 overlap=300)
+2025-10-26 15:35:23,226 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:35:23,270 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:35:34,052 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:35:34,100 | INFO | rag_app | Full rebuild fallback produced 1049 chunks (size=800 overlap=300)
+2025-10-26 15:35:35,484 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:35:35,529 | INFO | rag_app | Full rebuild fallback produced 1049 chunks (size=800 overlap=300)
+2025-10-26 15:35:35,706 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:35:35,714 | INFO | rag_app | Full rebuild fallback produced 1049 chunks (size=800 overlap=300)
+2025-10-26 15:35:35,894 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:35:35,899 | INFO | rag_app | Full rebuild fallback produced 1049 chunks (size=800 overlap=300)
+2025-10-26 15:36:15,952 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:36:15,956 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:36:16,194 | INFO | rag_app | UI question: 'what is EOMT' (use_llm=True)
+2025-10-26 15:36:16,195 | INFO | rag_app | ask() question='what is EOMT' k_init=50 k_final=12 use_llm=True
+2025-10-26 15:36:16,211 | DEBUG | rag_app | topic flags: want_rleg=False want_dino=False
+2025-10-26 15:36:16,642 | DEBUG | rag_app | generic retrieval -> 50 hits
+2025-10-26 15:36:16,961 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:38:53,552 | DEBUG | rag_app | Logger initialized. APP_LOG_PATH=logs/app.log ERR_LOG_PATH=logs/error.log
+2025-10-26 15:38:53,553 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:38:53,553 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:38:53,553 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:38:53,553 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:39:16,597 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:39:16,597 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:39:16,597 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:39:16,597 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:39:16,615 | INFO | rag_app | Uploaded 3 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:39:16,620 | INFO | rag_app | build_index() incremental mode with 3 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:39:18,247 | INFO | rag_app | Loaded 3 docs from new_paths for incremental add
+2025-10-26 15:39:18,249 | INFO | rag_app | New docs chunked into 752 chunks (size=800 overlap=300)
+2025-10-26 15:39:18,249 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:39:18,250 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:39:21,346 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:39:21,348 | INFO | rag_app | Full rebuild fallback produced 1049 chunks (size=800 overlap=300)
+2025-10-26 15:39:39,998 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:40:04,374 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:40:04,376 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:40:04,376 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:40:04,377 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:40:04,441 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:40:04,441 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:40:04,442 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:40:04,442 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:40:04,464 | INFO | rag_app | Uploaded 3 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:40:04,467 | INFO | rag_app | build_index() incremental mode with 3 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:40:04,469 | INFO | rag_app | Uploaded 3 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:40:04,470 | INFO | rag_app | build_index() incremental mode with 3 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:40:04,760 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:40:04,817 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:40:04,817 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:40:04,840 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:40:05,064 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:40:05,064 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:40:05,064 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:40:05,065 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:40:05,066 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:40:05,100 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:40:05,102 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:40:05,102 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:40:05,161 | INFO | rag_app | Uploaded 3 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:40:05,169 | INFO | rag_app | build_index() incremental mode with 3 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf']
+2025-10-26 15:40:09,809 | INFO | rag_app | Loaded 3 docs from new_paths for incremental add
+2025-10-26 15:40:09,845 | INFO | rag_app | New docs chunked into 752 chunks (size=800 overlap=300)
+2025-10-26 15:40:10,068 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:40:10,090 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:40:10,514 | INFO | rag_app | Loaded 3 docs from new_paths for incremental add
+2025-10-26 15:40:10,545 | INFO | rag_app | New docs chunked into 752 chunks (size=800 overlap=300)
+2025-10-26 15:40:10,576 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:40:10,604 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:40:10,964 | INFO | rag_app | Loaded 3 docs from new_paths for incremental add
+2025-10-26 15:40:11,003 | INFO | rag_app | New docs chunked into 752 chunks (size=800 overlap=300)
+2025-10-26 15:40:11,025 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:40:11,026 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:40:20,663 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:40:20,698 | INFO | rag_app | Full rebuild fallback produced 1049 chunks (size=800 overlap=300)
+2025-10-26 15:40:20,745 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:40:20,775 | INFO | rag_app | Full rebuild fallback produced 1049 chunks (size=800 overlap=300)
+2025-10-26 15:40:20,921 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:40:20,924 | INFO | rag_app | Full rebuild fallback produced 1049 chunks (size=800 overlap=300)
+2025-10-26 15:41:04,904 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:41:04,947 | INFO | rag_app | UI question: 'what is DINOV3 and EOMT' (use_llm=True)
+2025-10-26 15:41:04,948 | INFO | rag_app | ask() question='what is DINOV3 and EOMT' k_init=50 k_final=12 use_llm=True
+2025-10-26 15:41:04,949 | DEBUG | rag_app | topic flags: want_rleg=False want_dino=True
+2025-10-26 15:41:06,986 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:41:06,992 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:41:07,361 | DEBUG | rag_app | generic retrieval -> 50 hits
+2025-10-26 15:41:07,418 | DEBUG | rag_app | DINOv3 retrieval -> 50 hits
+2025-10-26 15:41:14,927 | INFO | rag_app | answer generated, 339 chars
+2025-10-26 15:41:14,928 | INFO | rag_app | answer confidence=0.766
+2025-10-26 15:41:14,934 | INFO | rag_app | UI answer len=339 chars conf=0.766
+2025-10-26 15:42:02,969 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:42:02,971 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:42:02,971 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:42:02,971 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:42:03,101 | INFO | rag_app | Uploaded 4 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'geethika.txt']
+2025-10-26 15:42:03,113 | INFO | rag_app | build_index() incremental mode with 4 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'geethika.txt']
+2025-10-26 15:42:04,852 | INFO | rag_app | Loaded 4 docs from new_paths for incremental add
+2025-10-26 15:42:04,853 | INFO | rag_app | New docs chunked into 753 chunks (size=800 overlap=300)
+2025-10-26 15:42:04,854 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:42:04,854 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:42:08,013 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:42:08,015 | INFO | rag_app | Full rebuild fallback produced 1049 chunks (size=800 overlap=300)
+2025-10-26 15:42:24,757 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:42:34,695 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:42:34,695 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:42:34,695 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:42:34,696 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:42:34,721 | INFO | rag_app | Uploaded 4 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'geethika.txt']
+2025-10-26 15:42:34,722 | INFO | rag_app | build_index() incremental mode with 4 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'geethika.txt']
+2025-10-26 15:42:34,819 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:42:34,838 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:42:34,838 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:42:34,838 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:42:34,932 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:42:34,950 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:42:34,958 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:42:34,964 | INFO | rag_app | Uploaded 4 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'geethika.txt']
+2025-10-26 15:42:34,971 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:42:34,994 | INFO | rag_app | build_index() incremental mode with 4 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'geethika.txt']
+2025-10-26 15:42:35,040 | INFO | rag_app | Uploaded 4 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'geethika.txt']
+2025-10-26 15:42:35,063 | INFO | rag_app | build_index() incremental mode with 4 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'geethika.txt']
+2025-10-26 15:42:35,399 | DEBUG | rag_app | Initializing RAGPipeline with settings: {'data_dir': 'data', 'sqlite_path': 'store/chunks.sqlite3', 'faiss_index_path': 'store/index.faiss', 'id_map_path': 'store/chunk_ids.npy', 'embedding_model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'chunk_size': 800, 'chunk_overlap': 300, 'default_top_k': 12, 'reranker_candidates': 50, 'reranker_type': 'mmr', 'mmr_lambda': 0.6, 'cross_encoder_model': 'cross-encoder/ms-marco-MiniLM-L-6-v2', 'gemini_reranker_model': 'gemini-2.5-flash', 'rrf_k_base': 60}
+2025-10-26 15:42:35,406 | DEBUG | rag_app | Embedder initialized with model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-26 15:42:35,412 | DEBUG | rag_app | VectorStore initialized. sqlite=store/chunks.sqlite3 faiss=store/index.faiss idmap=store/chunk_ids.npy
+2025-10-26 15:42:35,459 | INFO | rag_app | Using MMR reranker (lambda=0.60).
+2025-10-26 15:42:35,656 | INFO | rag_app | Uploaded 4 new files: ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'geethika.txt']
+2025-10-26 15:42:35,663 | INFO | rag_app | build_index() incremental mode with 4 new file(s): ['2112.01527v3.pdf', '2503.19108v1 (1).pdf', '2508.10104v1.pdf', 'geethika.txt']
+2025-10-26 15:42:39,168 | INFO | rag_app | Loaded 4 docs from new_paths for incremental add
+2025-10-26 15:42:39,199 | INFO | rag_app | New docs chunked into 753 chunks (size=800 overlap=300)
+2025-10-26 15:42:39,224 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:42:39,270 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:42:40,815 | INFO | rag_app | Loaded 4 docs from new_paths for incremental add
+2025-10-26 15:42:40,842 | INFO | rag_app | New docs chunked into 753 chunks (size=800 overlap=300)
+2025-10-26 15:42:40,881 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:42:40,897 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:42:41,542 | INFO | rag_app | Loaded 4 docs from new_paths for incremental add
+2025-10-26 15:42:41,557 | INFO | rag_app | New docs chunked into 753 chunks (size=800 overlap=300)
+2025-10-26 15:42:41,604 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:42:41,626 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:42:42,409 | INFO | rag_app | Loaded 4 docs from new_paths for incremental add
+2025-10-26 15:42:42,446 | INFO | rag_app | New docs chunked into 753 chunks (size=800 overlap=300)
+2025-10-26 15:42:42,580 | WARNING | rag_app | VectorStore has NO add_chunks() (likely old Pydantic version). Falling back to full rebuild of entire corpus.
+2025-10-26 15:42:42,594 | INFO | rag_app | Full rebuild fallback: scanning data
+2025-10-26 15:42:52,197 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:42:52,238 | INFO | rag_app | Full rebuild fallback produced 1049 chunks (size=800 overlap=300)
+2025-10-26 15:42:53,590 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:42:53,610 | INFO | rag_app | Full rebuild fallback produced 1049 chunks (size=800 overlap=300)
+2025-10-26 15:42:53,755 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:42:53,758 | INFO | rag_app | Full rebuild fallback produced 1049 chunks (size=800 overlap=300)
+2025-10-26 15:42:54,053 | INFO | rag_app | Loaded 10 docs for full rebuild fallback
+2025-10-26 15:42:54,056 | INFO | rag_app | Full rebuild fallback produced 1049 chunks (size=800 overlap=300)
+2025-10-26 15:43:35,103 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:43:35,108 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:43:35,117 | INFO | rag_app | Full rebuild fallback complete.
+2025-10-26 15:43:35,434 | INFO | rag_app | UI question: 'what is DINOV3 and EOMT AND WHO IS GEETHIKA' (use_llm=True)
+2025-10-26 15:43:35,435 | INFO | rag_app | ask() question='what is DINOV3 and EOMT AND WHO IS GEETHIKA' k_init=50 k_final=12 use_llm=True
+2025-10-26 15:43:35,436 | DEBUG | rag_app | topic flags: want_rleg=False want_dino=True
+2025-10-26 15:43:35,869 | DEBUG | rag_app | generic retrieval -> 50 hits
+2025-10-26 15:43:35,885 | DEBUG | rag_app | DINOv3 retrieval -> 50 hits
+2025-10-26 15:43:45,618 | INFO | rag_app | answer generated, 297 chars
+2025-10-26 15:43:45,621 | INFO | rag_app | answer confidence=0.726
+2025-10-26 15:43:45,627 | INFO | rag_app | UI answer len=297 chars conf=0.726

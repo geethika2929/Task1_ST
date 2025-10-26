@@ -14,6 +14,8 @@ dependencies = [
     "PyPDF2",
     "numpy",
     "google-genai",  # Gemini 2.5 Flash client
+    "python-docx",
+    "streamlit"
 ]
 
 [tool.uv]
